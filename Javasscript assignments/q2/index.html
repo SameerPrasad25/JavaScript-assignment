@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Sum & Product of Array</title>
+</head>
+<body>
+ Array  <p id="array"></p>
+   Sum of Array<p id="sum"></p>
+   Product of Array<p id="prod"></p>
+    <script>
+        var array= [10,20,30,40,50];
+var sum=0;
+var prod=1;
+var i=0; 
+while(i<array.length)
+{
+    sum = sum+ array[i];
+    prod = prod*array[i];
+    i++}
+console.log("Sum of Array= :"+sum);
+console.log("Product of Array= :"+prod);
+document.getElementById("sum").innerHTML =sum;
+document.getElementById("prod").innerHTML =prod;
+document.getElementById("array").innerHTML =array;
+
+    </script>
+</body>
+</html>

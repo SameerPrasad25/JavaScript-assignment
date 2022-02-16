@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get form First Name and Last Name</title>
+</head>
+<body>
+    
+<form onsubmit="formValue()">
+First name: <input type="text" id="fname" value="sameer"><br>
+Last name: <input type="text" id="lname" value="prasad"><br>
+<input type="submit" value="Submit">
+</form>
+<script>
+    function formValue()
+{
+var fn=document.getElementById("fname").value;
+var ln=document.getElementById("lname").value;
+   console.log(fn,ln);  
+   alert(fn +" "+ ln);
+}
+
+</script>
+</body>
+</html>

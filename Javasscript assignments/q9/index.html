@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date is a Weekend or Not</title>
+</head>
+<body>
+    <script>
+        var weekend =  function(date1){
+    var dt = new Date(date1);
+     
+    if(dt.getDay() == 6 || dt.getDay() == 0)
+       {
+        return "Weekend";
+        }
+       
+}
+
+console.log(weekend('Nov 15, 2014'));
+console.log(weekend('Nov 16, 2014'));
+console.log(weekend('Nov 17, 2014'));
+
+    </script>
+</body>
+</html>

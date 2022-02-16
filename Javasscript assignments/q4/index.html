@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Email Validation</title>    
+</head>
+<body>
+<script>
+ function valid_email(emailid)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(emailid.match(mailformat))
+{  
+console.log("Valid email address....");  
+}  
+else  
+{  
+console.log("Invalid email address....");  
+}
+}
+valid_email("sameer.prasad@mastek.com");
+valid_email(".sameer.25@gmail.com");
+valid_email("sameercr7prasad@gmail.com");
+</script>
+</body>
+</html>
